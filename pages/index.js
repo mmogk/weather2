@@ -99,9 +99,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if(grabWeather.current === true){
-      fetchWeather();
-    }
+    fetchWeather();
     return () => {
       grabWeather.current = true;
     }
